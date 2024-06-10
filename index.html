@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+   <!-- <meta property="og:image" content="static/image/your_banner_image.png" />-->
+  <!-- <meta property="og:image:width" content="1200"/>-->
+   <!-- <meta property="og:image:height" content="630"/>-->
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Hybrid Neural Audio Effects</title>
+ <!--  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">-->
+ <!--  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">-->
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Hybrid Neural Audio Effects</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://www.hf.uio.no/imv/english/people/aca/temporary/riccarsi/" target="_blank">Riccardo Simionato</a>,</span>
+                <span class="author-block">
+                  <a href="https://www.hf.uio.no/imv/english/people/aca/tenured/stefanof/" target="_blank">Stefano Fasciani</a></span>
+                  <span class="author-block">
+                   <!--  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
+                  <!-- </span> -->
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">University of Oslo<br>SMC 2024</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/RiccardoVib/Hybrid-Neural-Audio-Effects" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Machine learning techniques are commonly employed for modeling audio devices, particularly analog audio effects. Conditioned models have been proposed as well. The conditioning mechanism utilizes the control parameters of the modeled device to influence the sound alteration process. Neural networks are shown to be capable of interpolating between conditioning parameter values. This paper further investigates the interpolation ability of neural audio effects. In particular, we introduce additional conditioning parameters to instruct the neural network to learn and predict different audio effects using Feature-wise Linear Modulation and the Gated Linear Unit. The resulting model is a hybrid neural effect that can reproduce, depending on the conditioning values, the audio-altering process of a specific audio effect or interpolates between them. We created hybrid audio effects from a preamp circuit, an optical compressor, and a tape recorder. The designed models are able to learn the sound alteration processes for individual effects and their combinations without producing audible artifacts, and users can use the conditioning parameters to navigate in a continuous space where each point represents a different hybrid audio effect.  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+    <div class="container">
+  <h2 class="title is-3">Audio Examples</h2>
+<img src="static/images/DelaySTFT.png" alt="STFT" width="1000"  height="1000" class="center">
+        <p>Normalized spectrograms of 5 seconds included in the test sets. Targets (top) against C (left), T (middle), and P
+(right) models, and against CT, TP, CP, and CTP models conditioned as C, as T, and as P, respectively.
+           </p>
+      </div>
+    </div>
+     </div>
+ </section>
+
+  
+<!-- audio -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+     <!-- Your audio here -->
+        <table align="left" id="myTable">
+  <tr> 
+            <th align="center" >Input (Compressor)</th> 
+            <th align="center" >Input (Tape Delay)</th> 
+            <th align="center" >Input (Preampflier)</th> 
+</tr>
+  <tr>
+  <td> <audio controls unmuted><source src="static/Audio/0_inpC.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/0_inpT.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/0_inpP.wav" type="audio/wav"> </audio></td>
+    </tr>
+</table>
+   <table align="left" id="myTable">
+  <tr> 
+            <th align="center" >Targets (Compressor)</th> 
+            <th align="center" >Targets (Tape Delay)</th> 
+            <th align="center" >Targets (Preampflier)</th> 
+    </tr> 
+<tr>
+    <td> <audio controls unmuted><source src="static/Audio/0_tarC.wav" type="audio/wav"> </audio></td>
+<td> <audio controls unmuted><source src="static/Audio/0_tarT.wav" type="audio/wav"> </audio></td>
+  <td> <audio controls unmuted><source src="static/Audio/0_tarP.wav" type="audio/wav"> </audio></td>
+</tr>
+</table>
+      <table align="left" id="myTable">
+  <tr> 
+            <th align="center" >Prediciton C model</th> 
+            <th align="center" >Prediciton T model</th> 
+            <th align="center" >Prediciton P model </th> 
+    </tr> 
+<tr>
+         <td> <audio controls unmuted><source src="static/Audio/0_predC.wav" type="audio/wav"> </audio></td>
+<td> <audio controls unmuted><source src="static/Audio/0_predT.wav" type="audio/wav"> </audio></td>
+  <td> <audio controls unmuted><source src="static/Audio/0_predP.wav" type="audio/wav"> </audio></td>
+</tr>
+</table>
+      <table align="left" id="myTable">
+  <tr> 
+            <th align="center" >Prediciton CP model (as C)</th> 
+            <th align="center" >Prediciton CT model (as T)</th> 
+            <th align="center" >Prediciton TP model (as P)</th> 
+    </tr> 
+<tr>
+         <td> <audio controls unmuted><source src="static/Audio/C_predCP.wav" type="audio/wav"> </audio></td>
+<td> <audio controls unmuted><source src="static/Audio/T_predCT.wav" type="audio/wav"> </audio></td>
+  <td> <audio controls unmuted><source src="static/Audio/P_predTP.wav" type="audio/wav"> </audio></td>
+</tr>
+</table>
+      <table align="left" id="myTable">
+  <tr> 
+            <th align="center" >Prediciton CTP model (as C)</th> 
+            <th align="center" >Prediciton CTP model (as T)</th> 
+            <th align="center" >Prediciton CTP model (as P)</th> 
+    </tr> 
+<tr>
+         <td> <audio controls unmuted><source src="static/Audio/C_predCTP.wav" type="audio/wav"> </audio></td>
+<td> <audio controls unmuted><source src="static/Audio/T_predCTP.wav" type="audio/wav"> </audio></td>
+  <td> <audio controls unmuted><source src="static/Audio/P_predCTP.wav" type="audio/wav"> </audio></td>
+</tr>
+</table>
+    </div>
+  </div>
+ </section> 
+
+  <section class="hero is-small is-light">
+       <div class="columns is-centered has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+<img src="static/images/EDCL1BPreampInterpolationD1constplot.png" alt="EDCL1BPreampInterpolationD1constplot"  width="300" 
+     height="200">
+    <img src="static/images/EDCL1BTapeInterpolationD1constplot.png" alt="EDCL1BTapeInterpolationD1constplot"  width="300" 
+     height="200" >
+    <img src="static/images/EDTapePreampInterpolationD1constplot.png" alt="EDTapePreampInterpolationD1constplot"  width="300" 
+     height="200" >
+        <p>Waveforms and spectrograms (normalized) of 20 seconds included in the test sets, resulted from the CP (left), CT
+(middle), and TP (right) models when the parameter is 0.5.
+           </p>
+      </div>
+    </div>
+  </div>
+ </section>
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <table align="left" id="myTable">
+  <tr> 
+     <th align="center" > </th> 
+     <th align="center" >Input</th> 
+     <th align="center" > </th> 
+  </tr>
+  <tr> 
+    <td> <audio controls unmuted><source src="static/Audio/const_inpCP.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/const_inpCT.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/const_inpTP.wav" type="audio/wav"> </audio></td>
+</tr>
+    <tr>  
+     <th align="center" >Prediction CT</th> 
+    <th align="center" >Prediction CP</th> 
+    <th align="center" >Prediction TP</th> 
+</tr>
+  <tr>
+    <td> <audio controls unmuted><source src="static/Audio/const_predCP.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/const_predCT.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/const_predTP.wav" type="audio/wav"> </audio></td>
+    </tr>
+</table>
+      </div>
+    </div>
+ </section>
+
+
+  <section class="hero is-small is-light">
+       <div class="columns is-centered has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+<img src="static/images/EDCL1BPreampInterpolationD1sineplot.png" alt="EDCL1BPreampInterpolationD1sineplot"  width="300" 
+     height="200">
+    <img src="static/images/EDCL1BTapeInterpolationD1sineplot.png" alt="EDCL1BTapeInterpolationD1sineplot"  width="300" 
+     height="200" >
+    <img src="static/images/EDTapePreampInterpolationD1sineplot.png" alt="EDTapePreampInterpolationD1sineplot"  width="300" 
+     height="200" >
+        <p>Normalized spectrograms of a 20 second signal resulted from the CP (left), CT (middle), and TP (right) models
+when the parameter is continuously changed by modulating it using a sine wave at 0.05 Hz.
+           </p>
+      </div>
+    </div>
+  </div>
+ </section>
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <table align="left" id="myTable">
+  <tr> 
+     <th align="center" > </th> 
+     <th align="center" >Input</th> 
+     <th align="center" > </th> 
+  </tr>
+  <tr> 
+    <td> </td>
+    <td> <audio controls unmuted><source src="static/Audio/sine_inpCT.wav" type="audio/wav"> </audio></td>
+    <td> </td>
+</tr>
+</tr>
+    <tr>  
+     <th align="center" >Prediction CT</th> 
+    <th align="center" >Prediction CP</th> 
+    <th align="center" >Prediction TP</th> 
+</tr>
+  <tr>
+    <td> <audio controls unmuted><source src="static/Audio/sine_predCP.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/sine_predCT.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/sine_predTP.wav" type="audio/wav"> </audio></td>
+    </tr>
+</table>
+      </div>
+    </div>
+ </section>
+
+  <section class="hero is-small is-light">
+       <div class="columns is-centered has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+<img src="static/images/EDCL1BTapePreampCTP3Interpolation5plot.png" alt="EDCL1BTapePreampCTP3Interpolation5plot"  width="300" 
+     height="200">
+    <img src="static/images/EDCL1BTapePreampCTP3Interpolation6plot.png" alt="EDCL1BTapePreampCTP3Interpolation6plot"  width="300" 
+     height="200" >
+    <img src="static/images/EDCL1BTapePreampCTP3Interpolation7plot.png" alt="EDCL1BTapePreampCTP3Interpolation7plot"  width="300" 
+     height="200" >
+        <img src="static/images/EDCL1BTapePreampCTP3Interpolation8plot.png" alt="EDCL1BTapePreampCTP3Interpolation8plot"  width="300" 
+     height="200" >
+        <p>Waveforms and normalized spectrograms of a 20 second signal resulted from the CTP model when the parameter
+is [0.3, 0.3, 0.3] (top-left), [0.5, 0.25, 0.25] (top-right), [0.25, 0.5, 0.25] (bottom-left), and [0.25, 0.25, 0.5] (bottom-right).
+           </p>
+      </div>
+    </div>
+  </div>
+ </section>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+     <div class="columns is-centered has-text-centered">
+    <div class="hero-body">
+        <table align="left" id="myTable">
+</tr>
+    <tr>  
+     <th align="center" >Prediction</th> 
+    <th align="center" > </th> 
+    <th align="center" > </th> 
+</tr>
+  <tr>
+    <td> <audio controls unmuted><source src="static/Audio/5_new2_predCTP.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/6_new2_predCTP.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/7_new2_predCTP.wav" type="audio/wav"> </audio></td>
+     <td> <audio controls unmuted><source src="static/Audio/8_new2_predCTP.wav" type="audio/wav"> </audio></td>
+    </tr>
+</table>
+      </div>
+    </div>
+    </div>
+ </section>
+
+  <section class="hero is-small is-light">
+       <div class="columns is-centered has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+<img src="static/images/EDCL1BTapePreampCTP3Interpolation1plot.png" alt="EDCL1BTapePreampCTP3Interpolation1plot"  width="300" 
+     height="200">
+    <img src="static/images/EDCL1BTapePreampCTP3Interpolation2plot.png" alt="EDCL1BTapePreampCTP3Interpolation2plot"  width="300" 
+     height="200" >
+    <img src="static/images/EDCL1BTapePreampCTP3Interpolation3plot.png" alt="EDCL1BTapePreampCTP3Interpolation3plot"  width="300" 
+     height="200" >
+        <img src="static/images/EDCL1BTapePreampCTP3Interpolation4plot.png" alt="EDCL1BTapePreampCTP3Interpolation4plot"  width="300" 
+     height="200" >
+        <p>Waveforms and normalized spectrograms of a 20 second signal resulted from the CTP model when the parameter
+is [0.0,0.0,0.0] (top-left), [1.0,1.0,1.0] (top-right), [0.5,0.5,0.5] (bottom-left), and [0.3,0.8,0.5] (bottom-right).
+           </p>
+      </div>
+    </div>
+  </div>
+ </section>
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+    <div class="hero-body">
+        <table align="left" id="myTable">
+</tr>
+    <tr>  
+     <th align="center" >Predictions</th> 
+    <th align="center" > </th> 
+    <th align="center" > </th> 
+</tr>
+  <tr>
+    <td> <audio controls unmuted><source src="static/Audio/1_new2_predCTP.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/2_new2_predCTP.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/3_new2_predCTP.wav" type="audio/wav"> </audio></td>
+     <td> <audio controls unmuted><source src="static/Audio/4_new2_predCTP.wav" type="audio/wav"> </audio></td>
+    </tr>
+</table>
+      </div>
+    </div>
+    </div>
+ </section>
+
+  <section class="hero is-small is-light">
+       <div class="columns is-centered has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+<img src="static/images/EDCL1BTapePreampCTP3Interpolation_contplot.png" alt="EDCL1BTapePreampCTP3Interpolation_contplot"  width="300" 
+     height="200">
+        <p>Normalized spectrogram of a 20 second music signal produced by the CTP model when the parameter is continuously changed by modulating it using a sine wave at 0.05, 0.07, and 0.09 Hz.
+           </p>
+      </div>
+    </div>
+  </div>
+ </section>
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <table align="left" id="myTable">
+</tr>
+    <tr>  
+     <th align="center" ></th> 
+    <th align="center" >Predictions</th> 
+    <th align="center" > </th> 
+</tr>
+  <tr>
+    <td> </td>
+    <td> <audio controls unmuted><source src="static/Audio/0_cont_new2_predCTP.wav" type="audio/wav"> </audio></td>
+    </tr>
+</table>
+      </div>
+    </div>
+ </section>
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
