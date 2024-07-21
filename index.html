@@ -169,6 +169,8 @@ Neural networks have been found suitable for virtual analog modeling application
     </div>
      </div>
        </section>
+
+  
   <section class="hero is-small is-light">
   <div class="hero-body">
         <div class="columns is-centered has-text-centered">
@@ -219,157 +221,6 @@ Neural networks have been found suitable for virtual analog modeling application
      </div>
  </section>
 
-  <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-   <!-- <meta property="og:image" content="static/image/your_banner_image.png" />-->
-  <!-- <meta property="og:image:width" content="1200"/>-->
-   <!-- <meta property="og:image:height" content="630"/>-->
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>FULLY CONDITIONED AND LOW-LATENCY BLACK-BOX MODELING OF ANALOG COMPRESSION</title>
- <!--  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">-->
- <!--  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">-->
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-</head>
-<body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">FULLY CONDITIONED AND LOW-LATENCY BLACK-BOX MODELING OF ANALOG COMPRESSION</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://www.hf.uio.no/imv/english/people/aca/temporary/riccarsi/" target="_blank">Riccardo Simionato</a>,</span>
-                <span class="author-block">
-                  <a href="https://www.hf.uio.no/imv/english/people/aca/tenured/stefanof/" target="_blank">Stefano Fasciani</a></span>
-                  <span class="author-block">
-                   <!--  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
-                  <!-- </span> -->
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">University of Oslo<br>DAFx 2023</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://www.dafx.de/paper-archive/2023/DAFx23_paper_10.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/RiccardoVib/CONDITIONED-MODELING-OF-OPTICAL-COMPRESSOR" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>                
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-Neural networks have been found suitable for virtual analog modeling applications. Several analog audio effects have been successfully modeled with deep learning techniques, using low-latency and conditioned architectures suitable for real-world applications. Challenges remain with effects presenting more complex responses, such as nonlinear and time-varying input-output relationships. This paper proposes a deep-learning model for the analog compression effect. The architecture we introduce is fully conditioned by the device control parameters and it works on small audio segments, allowing low-latency real-time implementations. The architecture is used to model the CL 1B analog optical compressor, showing an overall high accuracy and ability to capture the different attack and release compression profiles. The proposed architecture' ability to model audio compression behaviors is also verified using datasets from other compressors. Limitations remain with heavy compression scenarios determined by the conditioning parameters.          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-  
-<section class="hero is-small is-light">
-  <div class="hero-body">
-        <div class="columns is-centered has-text-centered">
-    <div class="container">
-  <h2 class="title is-3">Datasets</h2>
-<a href="https://doi.org/10.34740/kaggle/dsv/5330581">TubeTech CL 1B Dataset| </a>
-<a href="https://doi.org/10.34740/kaggle/dsv/6118717">PSP MicroComp Dataset | </a>
-<a href="https://doi.org/10.34740/kaggle/dsv/6118202">U-he Presswerk Dataset | </a>
-<a href="https://doi.org/10.34740/kaggle/dsv/6119102">Softube FET Dataset | </a>
-<a href="https://zenodo.org/record/3824876">LA-2A Dataset </a>
-      </div>
-    </div>
-     </div>
- </section>
-  
-<section class="hero is-small is-light">
-  <div class="hero-body">
-        <div class="columns is-centered has-text-centered">
-    <div class="container">
-  <h2 class="title is-3">TubeTech CL 1B - ED (Light) Audio Examples</h2>
-      <p>Attack Time: 150 ms, Release Time: 0,005 s, Ratio 6:1, Threshold -20dBu.
-           </p>
- <div class="container">
-    <img src="static/images/STFTCL1B-ED2_3.png" alt="STFT" style="width:20%">
-    <img src="static/images/timeCL1B-ED2_3.png" alt="time" style="width:20%">
-      </div>
-    </div>
-     </div>
- </section>
-
-  
 <!-- audio -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -383,43 +234,8 @@ Neural networks have been found suitable for virtual analog modeling application
 </tr>
   <tr>
   <td> <audio controls unmuted><source src="static/Audio/0_ED_inp.mp3" type="audio/mp3"> </audio></td>
-    <td> <audio controls unmuted><source src="static/Audio/3_ED_tar.mp3" type="audio/mp3"> </audio></td>
-    <td> <audio controls unmuted><source src="static/Audio/CL1B-ED2_3_pred.wav" type="audio/wav"> </audio></td>
-    </tr>
-        </table>
-    </div>
-     </div>
-       </section>
-  <section class="hero is-small is-light">
-  <div class="hero-body">
-        <div class="columns is-centered has-text-centered">
-    <div class="container">
-          <p>Attack Time: 0.5 ms, Release Time: 0,005 s, Ratio 10:1, Threshold -20dBu.
-           </p>
- <div class="container">
-    <img src="static/images/STFTCL1B-ED2_1.png" alt="STFT" style="width:20%">
-    <img src="static/images/timeCL1B-ED2_1.png" alt="time" style="width:20%">
-      </div>
-    </div>
-     </div>
- </section>
-
-  
-<!-- audio -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-     <!-- Your audio here -->
-        <table align="left" id="myTable">
-  <tr> 
-            <th align="center" >Input</th> 
-            <th align="center" >Target</th> 
-            <th align="center" >Prediciton</th> 
-</tr>
-  <tr>
-  <td> <audio controls unmuted><source src="static/Audio/1_ED_inp.mp3" type="audio/mp3"> </audio></td>
-    <td> <audio controls unmuted><source src="static/Audio/1_ED_tar.mp3" type="audio/mp3"> </audio></td>
-    <td> <audio controls unmuted><source src="static/Audio/CL1B-ED2_1_pred.wav" type="audio/wav"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/0_ED_tar.mp3" type="audio/mp3"> </audio></td>
+    <td> <audio controls unmuted><source src="static/Audio/CL1B-ED2_0_pred.wav" type="audio/wav"> </audio></td>
     </tr>
         </table>
           </div>
